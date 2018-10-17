@@ -1,0 +1,15 @@
+@import '../../variables';
+
+.Title {
+  font-family: $title-font;
+  color: $title-color;
+  line-height: 1.2;
+  text-transform: uppercase;
+  white-space: pre-wrap;
+
+  @include fontsize-title;
+
+  @include tablet-portrait-plus {
+    white-space: normal;
+  }
+}

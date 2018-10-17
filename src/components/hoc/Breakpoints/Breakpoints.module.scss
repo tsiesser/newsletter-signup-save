@@ -1,0 +1,19 @@
+@import '../../breakpoints';
+
+.Breakpoints {
+  > *:first-child::before {
+    position: absolute;
+    content: 'mobile';
+    color: gray;
+
+    @include tablet-portrait {
+      content: 'tablet portrait';
+    }
+    @include tablet-landscape {
+      content: 'tablet landscape';
+    }
+    @include desktop {
+      content: 'desktop';
+    }
+  }
+}

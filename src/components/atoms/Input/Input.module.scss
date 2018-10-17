@@ -1,0 +1,21 @@
+@import '../../variables';
+
+.Input {
+  background-color: $input-background;
+  font-family: $input-font;
+  color: $input-color;
+  border: none;
+  border-radius: 5px;
+  padding: 0 1em;
+  height: 2.75rem;
+
+  @include fontsize-input;
+
+  &::placeholder {
+    opacity: 0.6; /* for Firefox */
+  }
+  &:hover, &:focus {
+    background-color: $input-background-active;
+    outline: none;
+  }
+}

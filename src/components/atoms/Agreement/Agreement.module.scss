@@ -1,0 +1,21 @@
+@import '../../variables';
+
+.Agreement {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: $agreement-font;
+  color: $agreement-color;
+  text-align: left;
+
+  @include fontsize-small;
+
+  input {
+    margin-right: 0.5rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import '../../_variables';
+
+.LargeText {
+  font-family: $text-font;
+  color: $text-color;
+  line-height: 1.2;
+
+  @include fontsize-text;
+}

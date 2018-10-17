@@ -1,0 +1,11 @@
+@import '../../variables';
+
+.Header {
+  font-family: $header-font;
+  color: $header-color;
+  font-size: 2.5rem;
+  text-transform: lowercase;
+  white-space: nowrap;
+
+  @include fontsize-header;
+}

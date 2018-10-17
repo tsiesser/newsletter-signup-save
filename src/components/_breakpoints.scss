@@ -1,0 +1,42 @@
+// responsive breakpoints based on:
+// https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
+
+$tablet-portrait: 600px;
+$tablet-landscape: 900px;
+$desktop: 1200px;
+
+@mixin mobile {
+  @media (max-width: $tablet-portrait - 1px) {
+    @content;
+  }
+}
+@mixin tablet-portrait {
+  @media (min-width: $tablet-portrait) and (max-width: $tablet-landscape - 1px) {
+    @content;
+  }
+}
+@mixin tablet-portrait-plus {
+  @media (min-width: $tablet-portrait) {
+    @content;
+  }
+}
+@mixin tablet-landscape {
+  @media (min-width: $tablet-landscape) and (max-width: $desktop - 1px) {
+    @content;
+  }
+}
+@mixin tablet-landscape-plus {
+  @media (min-width: $tablet-landscape) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: 600px) and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}

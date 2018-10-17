@@ -1,0 +1,21 @@
+@import '../../variables';
+
+.Congrats {
+  margin-top: 0.5em;
+
+  @include tablet-portrait-plus {
+    margin-top: 0;
+  }
+
+  > *:first-child {
+    margin-bottom: 0.75em;
+
+    @include tablet {
+      margin-bottom: 0.5em;
+    }
+
+    @include desktop {
+      margin-bottom: 0.25em;
+    }
+  }
+}

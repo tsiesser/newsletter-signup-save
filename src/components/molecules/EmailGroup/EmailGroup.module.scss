@@ -1,0 +1,31 @@
+@import '../../breakpoints';
+
+.EmailGroup {
+  display: flex;
+  flex-flow: column nowrap;
+
+  @include tablet-portrait-plus {
+    flex-flow: row nowrap;
+  }
+
+  .flexColumn {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 0.6em;
+
+    @include tablet-portrait-plus {
+      margin-bottom: 0em;
+      margin-right: 1em;
+    }
+  }
+
+  .flexColumn:first-child:first-child {
+    // assumes first child is input control
+    width: 100%;
+    min-width: 0;
+  }
+
+  .error {
+    margin-top: 0.6em;
+  }
+}

@@ -1,0 +1,25 @@
+@import '../../variables';
+
+%error-shared {
+  color: $error-color;
+  font-family: $error-font;
+  text-align: left;
+  margin-left: 0.25em; /* looks better */
+
+  @include fontsize-small;
+}
+.ErrorMessage {
+  @extend %error-shared;
+}
+.ErrorMessageUp {
+  @extend %error-shared;
+}
+.ErrorMessageDown {
+  @extend %error-shared;
+}
+.ErrorMessageUp::before {
+  content: ' \25B2 ';
+}
+.ErrorMessageDown::before {
+  content: ' \25BC ';
+}

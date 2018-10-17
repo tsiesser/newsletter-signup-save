@@ -1,0 +1,40 @@
+@import '../../variables';
+
+.NameGroup {
+  display: flex;
+  flex-flow: column nowrap;
+
+  @include tablet-portrait-plus {
+    flex-flow: row nowrap;
+  }
+
+  .flexRow {
+    display: flex;
+    flex-flow: row nowrap;
+
+    >* {
+      width: 100%;
+      min-width: 0;
+    }
+
+    >*:first-child {
+      margin-right: 0.5em;
+    }
+  }
+
+  .flexColumn {
+    display: flex;
+    flex-flow: column nowrap;
+
+    margin-bottom: 0.6em;
+
+    @include tablet-portrait-plus {
+      margin-bottom: 0em;
+      margin-right: 1em;
+    }
+  }
+
+  .error {
+    margin-top: 0.6em;
+  }
+}

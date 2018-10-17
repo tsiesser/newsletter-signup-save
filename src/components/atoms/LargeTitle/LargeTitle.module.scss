@@ -1,0 +1,15 @@
+@import '../../variables';
+
+.LargeTitle {
+  font-family: $title-font;
+  text-transform: capitalize;
+  color: $title-color;
+  line-height: 1.2;
+  white-space: pre-wrap;
+
+  @include fontsize-title-large;
+
+  @include tablet-portrait-plus {
+    white-space: normal;
+  }
+}

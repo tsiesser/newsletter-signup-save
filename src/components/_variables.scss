@@ -1,0 +1,89 @@
+@import 'breakpoints';
+
+$header-font: 'Elaine D02';
+$header-color: #B6FDBF;
+
+$title-font: 'Azo Sans Bold';
+$title-color: #94AEBF;
+
+$input-font: 'Azo Sans';
+$input-color: #fff;
+$input-background: rgba(255, 255, 255, 0.12);
+$input-background-active: rgba(255, 255, 255, 0.2);
+
+$button-font: 'Azo Sans Bold';
+$button-color: #fff;
+$button-background: #ED1F34;
+
+$agreement-font: 'Azo Sans Light';
+$agreement-color: #888888;
+
+$text-font: 'Azo Sans Light';
+$text-color: $title-color;
+
+$error-font: 'Azo Sans';
+$error-color: $button-background;
+
+@mixin fontsize-header {
+  font-size: 3rem;
+
+  @include tablet-portrait {
+    font-size: 2.5rem;
+  }
+  @include tablet-landscape {
+    font-size: 3rem;
+  }
+  @include desktop {
+    font-size: 4rem;
+  }
+}
+@mixin fontsize-title {
+  font-size: 1.2rem;
+
+  @include tablet {
+    font-size: 1rem;
+  }
+  @include desktop {
+    font-size: 1.25rem;
+  }
+}
+@mixin fontsize-title-large {
+  font-size: 1.8rem;
+
+  @include tablet {
+    font-size: 1.4rem;
+  }
+  @include desktop {
+    font-size: 1.6rem;
+  }
+}
+@mixin fontsize-text {
+  font-size: 1.35rem;
+
+  @include tablet {
+    font-size: 1rem;
+  }
+  @include desktop {
+    font-size: 1.3rem;
+  }
+}
+@mixin fontsize-input {
+  font-size: 1.1rem;
+
+  @include tablet {
+    font-size: 1.2rem;
+  }
+  @include desktop {
+    font-size: 1.25rem;
+  }
+}
+@mixin fontsize-button {
+  font-size: 1.2rem;
+
+  @include tablet-portrait-plus {
+    font-size: 1rem;
+  }
+}
+@mixin fontsize-small {
+  font-size: 0.75rem;
+}

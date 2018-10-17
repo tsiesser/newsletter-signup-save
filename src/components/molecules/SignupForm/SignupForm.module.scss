@@ -1,0 +1,46 @@
+@import '../../variables';
+
+.SignupForm {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  @include tablet-landscape-plus {
+    align-items: flex-start;
+  }
+
+  >* {
+    width: 100%;
+  }
+
+  >*:not(:last-child) {
+    margin-bottom: 0.5em;
+  }
+
+  >*:first-child {
+    margin-bottom: 0.75em;
+  }
+
+  >*:nth-child(2) {
+    @include tablet-landscape-plus {
+      width: 90%;
+    }
+  }
+
+  >.agreement {
+    align-self: flex-start;
+
+    // limit width of agreement to ~width of text inputs
+    @include tablet-portrait {
+      width: 76%;
+    }
+
+    @include tablet-landscape {
+      width: 72%;
+    }
+
+    @include desktop {
+      width: 70%;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import '../../variables';
+
+.Button {
+  background-color: $button-background;
+  color: $button-color;
+  font-family: $button-font;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  height: 2.75rem;
+
+  @include tablet-portrait-plus {
+    width: 7em;
+    min-width: 7em;
+  }
+
+  @include fontsize-button;
+
+  &:focus {
+    outline: none;
+  }
+}

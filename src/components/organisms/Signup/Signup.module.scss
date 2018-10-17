@@ -1,0 +1,89 @@
+@import '../../variables';
+
+.SignupContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  .Signup {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    min-height: 21rem;
+    padding: 1.5em;
+
+    @include tablet-portrait {
+      min-height: 14rem;
+    }
+    @include tablet-landscape-plus {
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+    }
+    @include tablet-landscape {
+      min-height: 10.5rem;
+      width: 50rem;
+
+      > *:first-child {
+        padding-top: 2.2rem;
+      }
+    }
+    @include desktop {
+      min-height: 11rem;
+      width: 60rem;
+
+      > *:first-child {
+        padding-top: 2rem;
+      }
+    }
+
+    .spacer {
+      width: 2em;
+      height: 0.1rem;
+
+      @include tablet-portrait {
+        height: 0.25rem;
+      }
+
+      @include desktop {
+        width: 4em;
+      }
+    }
+
+    .body {
+      max-width: 20em;
+      box-sizing: border-box;
+
+      @include tablet-portrait {
+        max-width: 36em;
+        padding-left: 2em;
+        padding-right: 2em;
+      }
+      @include tablet-landscape {
+        max-width: unset;
+        margin-top: 0;
+      }
+      @include desktop {
+        max-width: unset;
+        margin-top: 0;
+      }
+    }
+  }
+  .congrats {
+    justify-content: center;
+
+    @include tablet-landscape-plus {
+      align-items: center;
+
+      > *:first-child {
+        padding-top: 1rem;
+      }
+    }
+  }
+  .congrats-body {
+    align-self: center;
+  }
+}

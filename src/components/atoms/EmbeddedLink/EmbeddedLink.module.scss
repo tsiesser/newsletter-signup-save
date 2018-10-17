@@ -1,0 +1,13 @@
+@import '../../variables';
+
+.EmbeddedLink {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: underline;
+}
+.EmbeddedLink:hover {
+  @include desktop {
+    color: #fff;
+  }
+}
