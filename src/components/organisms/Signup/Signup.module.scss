@@ -25,7 +25,7 @@
     }
     @include tablet-landscape {
       min-height: 10.5rem;
-      width: 50rem;
+      width: 52rem;
 
       > *:first-child {
         padding-top: 2.2rem;
@@ -58,7 +58,7 @@
       box-sizing: border-box;
 
       @include tablet-portrait {
-        max-width: 36em;
+        max-width: 34em;
         padding-left: 2em;
         padding-right: 2em;
       }

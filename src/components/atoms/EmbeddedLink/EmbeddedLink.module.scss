@@ -5,6 +5,7 @@
   font-size: inherit;
   color: inherit;
   text-decoration: underline;
+  white-space: nowrap;
 }
 .EmbeddedLink:hover {
   @include desktop {
