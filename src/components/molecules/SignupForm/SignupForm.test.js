@@ -38,13 +38,13 @@ describe('<SignupForm/>', () => {
     expect(wrapper.find(EmailGroup)).toHaveLength(0);
   });
 
-  it('should have <ErrorMessage/> if error and errorField=agreement', () => {
-    wrapper.setProps({ step: 'email', error: 'ERROR', errorField: 'agreement' });
+  it('should have <ErrorMessage/> if error and error.field=agreement', () => {
+    wrapper.setProps({ step: 'email', error: { message: 'ERROR', field: 'agreement' }});
     expect(wrapper.find(ErrorMessage)).toHaveLength(1);
   });
 
-  it('should NOT have <ErrorMessage/> if error and errorField=email', () => {
-    wrapper.setProps({ step: 'email', error: 'ERROR', errorField: 'email' });
+  it('should NOT have <ErrorMessage/> if error and error.field=email', () => {
+    wrapper.setProps({ step: 'email', error: { message: 'ERROR', field: 'email' }});
     expect(wrapper.find(ErrorMessage)).toHaveLength(0);
   });
 
